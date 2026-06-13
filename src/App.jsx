@@ -6,7 +6,7 @@ import Clients from './pages/Clients'
 import Policies from './pages/Policies'
 import Renewals from './pages/Renewals'
 import Payments from './pages/Payments'
-import Legacy from './pages/Legacy'
+import Legacy from '../'
 import './index.css'
 
 export default function App() {
