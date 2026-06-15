@@ -7,7 +7,7 @@ import Policies from './pages/Policies'
 import Renewals from './pages/Renewals'
 import Payments from './pages/Payments'
 import Legacy from './pages/Legacy';
-import SQLEditor from './pages/sqlEditor'
+import SQLEditor from './pages/SqlEditor'
 import './index.css'
 
 export default function App() {
