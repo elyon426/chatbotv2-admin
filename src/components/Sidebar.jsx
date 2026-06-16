@@ -5,7 +5,8 @@ import {
   MdPolicy,
   MdAutorenew,
   MdPayment,
-  MdHistory
+  MdHistory,
+  MdCode
 } from 'react-icons/md'
 
 const links = [
@@ -15,6 +16,7 @@ const links = [
   { to: '/dashboard/renewals', icon: <MdAutorenew size={20} />, label: 'Renewals' },
   { to: '/dashboard/payments', icon: <MdPayment size={20} />, label: 'Payments' },
   { to: '/dashboard/legacy', icon: <MdHistory size={20} />, label: 'Legacy Clients' },
+  { to: '/dashboard/sql', icon: <MdCode size={20} />, label: 'SQL Editor' },
 ]
 
 export default function Sidebar() {

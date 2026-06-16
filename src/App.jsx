@@ -25,6 +25,7 @@ export default function App() {
             <Route path="/dashboard/renewals" element={<Renewals />} />
             <Route path="/dashboard/payments" element={<Payments />} />
             <Route path="/dashboard/legacy" element={<Legacy />} />
+            <Route path="/dashboard/sql" element={<SQLEditor />} />
           </Routes>
         </main>
       </div>
