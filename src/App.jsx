@@ -8,6 +8,7 @@ import Renewals from './pages/Renewals'
 import Payments from './pages/Payments'
 import Legacy from './pages/Legacy';
 import SQLEditor from './pages/SqlEditor'
+import Uploads from './pages/Uploads'
 import './index.css'
 
 export default function App() {
@@ -21,11 +22,13 @@ export default function App() {
             <Route path="/" element={<Navigate to="/dashboard" />} />
             <Route path="/dashboard" element={<Overview />} />
             <Route path="/dashboard/clients" element={<Clients />} />
+            <Route path="/dashboard/uploads" element={<Uploads />} />
             <Route path="/dashboard/policies" element={<Policies />} />
             <Route path="/dashboard/renewals" element={<Renewals />} />
             <Route path="/dashboard/payments" element={<Payments />} />
             <Route path="/dashboard/legacy" element={<Legacy />} />
             <Route path="/dashboard/sql" element={<SQLEditor />} />
+            
           </Routes>
         </main>
       </div>
