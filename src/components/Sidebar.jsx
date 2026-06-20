@@ -6,12 +6,14 @@ import {
   MdAutorenew,
   MdPayment,
   MdHistory,
-  MdCode
+  MdCode,
+  MdUpload
 } from 'react-icons/md'
 
 const links = [
   { to: '/dashboard', icon: <MdDashboard size={20} />, label: 'Overview' },
   { to: '/dashboard/clients', icon: <MdPeople size={20} />, label: 'Clients' },
+  { to: '/dashboard/uploads', icon: <MdUpload size={20} />, label: 'Uploads' },  
   { to: '/dashboard/policies', icon: <MdPolicy size={20} />, label: 'Policies' },
   { to: '/dashboard/renewals', icon: <MdAutorenew size={20} />, label: 'Renewals' },
   { to: '/dashboard/payments', icon: <MdPayment size={20} />, label: 'Payments' },
