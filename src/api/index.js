@@ -21,3 +21,5 @@ export const fetchLegacy = () =>
 
 export const fetchPendingRenewals = () => 
   fetch(`${BASE_URL}/api/v1/admin/pending-renewals`).then(r => r.json())
+export const fetchUploads = () =>
+  fetch(`${BASE_URL}/api/v1/admin/uploads`).then(r => r.json())
