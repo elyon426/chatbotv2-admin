@@ -21,5 +21,16 @@ export const fetchLegacy = () =>
 
 export const fetchPendingRenewals = () => 
   fetch(`${BASE_URL}/api/v1/admin/pending-renewals`).then(r => r.json())
+
 export const fetchUploads = () =>
   fetch(`${BASE_URL}/api/v1/admin/uploads`).then(r => r.json())
+
+export const fetchPendingRegistrations = () =>
+  fetch(`${BASE_URL}/api/v1/admin/pending-registrations`).then(r => r.json())
+
+export const verifyRegistration = (id, status) =>
+  fetch(`${BASE_URL}/api/v1/admin/pending-registrations/${id}/verify`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ status })
+  }).then(r => r.json())

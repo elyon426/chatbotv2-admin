@@ -7,6 +7,7 @@ import Policies from './pages/Policies'
 import Renewals from './pages/Renewals'
 import Payments from './pages/Payments'
 import Legacy from './pages/Legacy';
+import PendingRegistrations from './pages/PendingRegistrations'
 import SQLEditor from './pages/SqlEditor'
 import Uploads from './pages/Uploads'
 import './index.css'
@@ -21,6 +22,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/dashboard" />} />
             <Route path="/dashboard" element={<Overview />} />
+            <Route path="/dashboard/pending-registrations" element={<PendingRegistrations />} />
             <Route path="/dashboard/clients" element={<Clients />} />
             <Route path="/dashboard/uploads" element={<Uploads />} />
             <Route path="/dashboard/policies" element={<Policies />} />

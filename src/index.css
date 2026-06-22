@@ -502,3 +502,97 @@ body {
   font-size: 13px;
   margin-top: 8px;
 }
+/* -- Add to your existing index.css */
+
+/* Toolbar with search and bulk actions */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.bulk-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.selected-count {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-sm {
+  padding: 4px 12px;
+  font-size: 12px;
+  margin: 0 4px;
+}
+
+.btn-success {
+  background: #2ecc71;
+  color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+  background: #27ae60;
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Checkbox styling */
+.table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #3498db;
+}
+
+.table input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Status badges - reuse existing or add */
+.status-badge.pending {
+  background: #fef9e7;
+  color: #b7950b;
+}
+
+.muted {
+  color: #95a5a6;
+  font-size: 13px;
+}
